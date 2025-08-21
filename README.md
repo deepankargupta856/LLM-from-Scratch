@@ -72,37 +72,4 @@ A from-scratch implementation of a GPT-2 style autoregressive transformer in PyT
 
 ---
 
-## How to reproduce
-
-1. Install requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-2. Prepare dataset:
-
-```bash
-python scripts/build_dataset.py --input raw_text_folder --out data/tokenized_dataset.pt
-```
-
-3. Train:
-
-```bash
-python train.py --config configs/gpt_config_124m.json --device cuda --epochs 2
-```
-
-4. Evaluate:
-
-```bash
-python evaluate.py --checkpoint checkpoints/latest.pt --data data/val.pt
-```
-
-5. Sample:
-
-```bash
-python sample.py --checkpoint checkpoints/latest.pt --prompt "He said,"
-```
-
----
 
