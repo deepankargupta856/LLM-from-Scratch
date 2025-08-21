@@ -1,4 +1,4 @@
-# GPT-2 from Scratch (124M)
+# LLM from Scratch 
 
 A from-scratch implementation of a GPT-2 style autoregressive transformer in PyTorch. Implements tokenizer, positional encodings, multi-head causal self-attention, MLP, training loop, evaluation, and sampling — all without external transformer libraries.
 
